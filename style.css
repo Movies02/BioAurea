@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --cor:white;
+    --fonte:"sans-serif";
+    --cor_2:rgb(210, 126, 35);
+}
+
+/*Configurando a capa onde fica a 1º imagem de fundo */
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fbb79c;
+}
+
+#capa{
+    width: 100%;
+    height: 100%;
+
+    background-color:aliceblue ;
+    background-image: url("fundo_mobile_4.png");
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#listas{
+    position: relative;
+    top: 50%;
+    margin-left: 10px;
+    height: 50%;
+    overflow: hidden;
+}
+.produtos_listas{
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(254, 233, 191);
+    color: white;
+    font-family:sans-serif;
+    margin-bottom: 20px; 
+    transition: 2s ease;
+}
+
+.produtos_listas:hover{
+    background-image:linear-gradient(to left,rgb(235, 157, 0),rgb(199, 124, 2));
+    box-shadow:0 0 5px rgb(255, 166, 0);
+    border-color:rgb(255, 166, 0) ;
+    transition: background-image 2s ease;
+}
+
+/*Fim------------------------------------------------*/
+
+/*Temas e subtemas*/
+#info{
+    margin-top: 40%;
+}
+#tema,#subtema_,.tt{
+    color: var(--cor);
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: overline;
+}
+#subtema_{
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#logo_img_tema{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/*Fim-------------------------------------------------*/
+
+/*sobre nós*/
+
+.textos{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 40px;
+    padding: 10px;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+/*Fim-------------------------------------------------*/
+
+/*Botões*/
+
+#btn{
+    color: white;
+    padding: 10px;
+    border-radius: 9px;
+    border: solid 1px white;
+    background-color: transparent;
+    font-size: 1em;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Div dos ultimos lançamentos*/
+
+#ultimo_la{
+    margin-top: 80%;
+    line-height: 3em;
+}
+
+#img_destaque{
+    padding-left: 5px;
+    padding-top: 20%;
+    height: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor_2);
+    
+}
+
+div#vendo{
+    height: 70%;
+    padding-bottom: 20%;
+    background-color: var(--cor_2);
+    margin-bottom: 0;
+    padding-top: 50px;
+    border: solid 3px var(--cor_2);
+    box-shadow: 0 0 40px var(--cor_2);
+}
+#img_vendo{
+    display: inline-block;
+    height: 35%;
+    width: 70%;
+    border-radius: 10%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: url("prod_1.png");
+
+    background-position: center center;
+    background-size: 100% 100%;
+}
+#texto_vendo{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.destaque_{
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    
+    
+}
+
+#d1{
+    background-image: url("prod_1.png");
+}
+#d2{
+    background-image: url("prod_2.png");
+}
+#d3{
+    background-image: url("prod_3.png");
+}
+#d4{
+    background-image: url("prod_4.png");
+}
+#d5{
+    background-image: url("prod_5.png");
+}
+#d6{
+    background-image: url("prod_6.png");
+}
+.d_{
+    display: none;
+}
+
+
+
+
+
+
+
+/*Fim------------------------*/
